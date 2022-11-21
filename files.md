@@ -2,14 +2,12 @@
 
 # Factor de ponderación: 9
 
-** Recopilación Best practices XXXXXXXXXXXXXXXXXX
-
 ### Objetivos
 Los objetivos de esta práctica son que el alumnado:
 * Sea capaz de resolver problemas sencillos en C++ usando todos los conocimientos adquiridos hasta ahora, 
   y en particular utilizando funciones y objetos de las clases `std::string`, `std::array`, `std::vector`
 * Diseñe, desarrolle y utilice funciones en sus programas haciendo que sus programas sean modulares
-* Configure y practique el uso de Visual Studio Code (VSC) para editar ficheros en su VM
+* Configure y practique el uso de Visual Studio Code (VSC) para editar ficheros de forma remota en su VM
 
 ### Rúbrica de evaluacion de esta práctica
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva) que se tendrán en cuenta a la hora de evaluar esta práctica.
@@ -56,11 +54,12 @@ Generalmente, este programa (IDE) suele ofrecer muchas funcionalidades para la c
 Algunos IDE están orientados específicamente a un determinado lenguaje de programación, mientras que otros  se
 pueden utilizar con diferentes lenguajes.
 
-[Visual Studio Code](https://en.wikipedia.org/wiki/Visual_Studio_Code) (VSC) es un IDE desarrollado por Microsoft 
+[Visual Studio Code](https://en.wikipedia.org/wiki/Visual_Studio_Code) 
+(VSC) es un IDE desarrollado por Microsoft 
 para Windows, Linux, macOS y Web. 
 Incluye soporte para la depuración, control integrado de Git, resaltado de sintaxis, finalización inteligente de código, 
 fragmentos y 
-[refactorización](https://es.wikipedia.org/wiki/Refactorizaci%C3%B3n#:~:text=La%20refactorizaci%C3%B3n%20(del%20ingl%C3%A9s%20refactoring,sin%20cambiar%20su%20comportamiento%20externo.)
+[refactorización](https://es.wikipedia.org/wiki/Refactorizaci%C3%B3n)
 de código (modificación del código fuente sin cambiar su comportamiento).
 El IDE es personalizable, por lo que los usuarios pueden cambiar el tema del editor, los atajos de teclado y las preferencias. 
 Es gratuito y de código abierto y es 
