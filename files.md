@@ -60,20 +60,53 @@ para Windows, Linux, macOS y Web.
 Incluye soporte para la depuración, control integrado de Git, resaltado de sintaxis, finalización inteligente de código, 
 fragmentos y 
 [refactorización](https://es.wikipedia.org/wiki/Refactorizaci%C3%B3n)
-de código (modificación del código fuente sin cambiar su comportamiento).
-El IDE es personalizable, por lo que los usuarios pueden cambiar el tema del editor, los atajos de teclado y las preferencias. 
+(modificación del código fuente sin cambiar su comportamiento).
+El IDE es personalizable, por lo que sus usuarios pueden cambiar el tema del editor, los atajos de teclado y las preferencias. 
 Es gratuito y de código abierto y es 
 [uno de los IDEs más utilizados](https://www.geeksforgeeks.org/10-best-ide-for-web-developers-in-2022/)
 en la actualidad.
-En *Informática Básica* se adoptará VSC como IDE, y se utilizará en la evaluación de todas las prácticas
+En *Informática Básica* se adoptará VSC como IDE, y se utilizará en la evaluación de las prácticas
 restantes de la asignatura.
 
 Para instalar VSC en su instalación Linux particular (no en su máquina virtual, sino en la instalación Linux
 desde la que suele trabajar) siga
 [estas instrucciones](https://code.visualstudio.com/docs/setup/linux)
 descargando el paquete `.deb`. 
-Resulta útil realizar el paso 3 (opcional) del apartadto "SSH host setup#" que se muestra
-[en esta página](https://code.visualstudio.com/docs/remote/troubleshooting#_configuring-key-based-authentication)
+Una vez haya descargado el paquete, instálelo en su máquina ejecutando:
+```
+sudo apt install code_1.73.1-1667967334_amd64.deb
+```
+Una vez haya instalado el paquete, compruebe que puede iniciar VSC en su máquina ejecutando en una terminal:
+```
+code .
+```
+En el comando anterior el punto indica que desea Ud. editar ficheros en el directorio actual (`.`).
+Una vez arranque el programa, salga del mismo utilizando el menú (*File* -> *Exit*).
+
+Siga a continuación las instrucciones de la página
+[Remote Development using SSH](https://code.visualstudio.com/docs/remote/ssh)
+para configurar la edición remota usando VSC.
+
+De los tres pasos que se indican en la página anterior:
+1. Instalar un cliente OpenSSH
+2. Instalar Visual Studio Code
+3. Instalar el paquete correspondiente a la extensión *Remote Development extension pack* 
+
+Solo tiene que realizar el tercero, puesto que ya se tiene `ssh` tanto en la máquina virtual como en su máquina de
+trabajo y la instalación de VSC ya se ha realizado usando `apt install`.
+
+Si sigue el enlace
+[Remote Development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+le llevará a una página en la que le indica el comando que ha de teclear en VSC (`Ctrl+P`) para instalar la
+extensión.
+
+Vuelva de nuevo a la página 
+[Remote Development using SSH](https://code.visualstudio.com/docs/remote/ssh)
+y en el apartado *SSH host setup* realice las instrucciones del paso 3 (opcional). 
+Para ello ha de acceder a la página 
+[Remote Development Tips and Tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_improving-security-on-multi-user-servers)
+y seguir las instrucciones correspondientes a *Quick start: Using SSH keys*.
+
 Ejecute para ello (sustituyendo la dirección IP por la de su VM):
 ```
 $ ssh-keygen -t rsa -b 4096
@@ -87,24 +120,9 @@ muestra el paso 2 del apartado "Connect to a remote host" de esas instrucciones 
 muestra la ventana de autentificación de VSC para darle acceso a la máquina virtual.  
 [Este vídeo](https://youtu.be/pAUfwae-eWg) ilustra cómo configurar la edición remota de ficheros alojados en máquinas IaaS-ULL usando VSC.
 
-================== ???????????
 Una vez instalado en su máquina local, ejecute el Microsoft Visual Studio Code (VSC) y siga 
 [estas instrucciones](https://code.visualstudio.com/docs/remote/ssh)
 para configurar la edición remota de ficheros alojados en su máquina virtual.  
-
-
-
-16. Utilice el VSC para escribir el código fuente del programa 
-[hello_world.cc](https://github.com/fsande/IB-class-code-examples/blob/master/IntroductionToC%2B%2B/hello_world.cc).
-Grabe ese fichero en un directorio ~/practicas/ que cree en su máquina virtual.
-Acceda a la máquina virtual usando ssh, compile y ejecute ese programa.
-Para compilar el programa escriba el siguiente comando 
-
-`$ g++ -std=c++14 -g -Wall -o hello_world hello_world.cc`
-
-Y para ejecutarlo escriba:
-
-`$ ./hello_world`
 
 ### Material de estudio complementario
 Estudie todo lo que se indica en el epígrafe 
