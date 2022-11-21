@@ -76,6 +76,9 @@ Una vez haya descargado el paquete, instálelo en su máquina ejecutando:
 ```
 sudo apt install code_1.73.1-1667967334_amd64.deb
 ```
+El comando anterior se refiere al paquete con la versión 1.73.
+Asegúrese de usar el nombre del paquete `.deb` que ha descargado.
+
 Una vez haya instalado el paquete, compruebe que puede iniciar VSC en su máquina ejecutando en una terminal:
 ```
 code .
@@ -92,8 +95,8 @@ De los tres pasos que se indican en la página anterior:
 2. Instalar Visual Studio Code
 3. Instalar el paquete correspondiente a la extensión *Remote Development extension pack* 
 
-Solo tiene que realizar el tercero, puesto que ya se tiene `ssh` tanto en la máquina virtual como en su máquina de
-trabajo y la instalación de VSC ya se ha realizado usando `apt install`.
+Solo tiene que realizar el tercero, puesto que (1) ya se tiene `ssh` tanto en la máquina virtual como en su máquina de
+trabajo y la instalación de VSC (2) ya se ha realizado usando `apt install`.
 
 Si sigue el enlace
 [Remote Development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
@@ -102,9 +105,9 @@ extensión.
 
 Vuelva de nuevo a la página 
 [Remote Development using SSH](https://code.visualstudio.com/docs/remote/ssh)
-y en el apartado *SSH host setup* realice las instrucciones del paso 3 (opcional). 
+y del apartado *SSH host setup* realice las instrucciones del paso 3 (opcional). 
 Para ello ha de acceder a la página 
-[Remote Development Tips and Tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_improving-security-on-multi-user-servers)
+[Tips and Tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_improving-security-on-multi-user-servers)
 y seguir las instrucciones correspondientes a *Quick start: Using SSH keys*.
 
 Ejecute para ello (sustituyendo la dirección IP por la de su VM):
@@ -123,6 +126,24 @@ muestra la ventana de autentificación de VSC para darle acceso a la máquina vi
 Una vez instalado en su máquina local, ejecute el Microsoft Visual Studio Code (VSC) y siga 
 [estas instrucciones](https://code.visualstudio.com/docs/remote/ssh)
 para configurar la edición remota de ficheros alojados en su máquina virtual.  
+
+Siga a continuación las instrucciones de la página
+[C/C++ for Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp)
+para instalar la extensión para C/C++ en VSC.
+
+Se puede comprobar que ya se dispone del compilador `g++` de GNU, que es el que se ha venido utilizando en
+*Informática Básica*.
+
+Siga las instrucciones para crear un subdirectorio con nombre `HelloWorld` en el directorio de la práctica 10
+y edite dentro de ese directorio de la máquina remota el fichero `helloworld.cc` al que se refiere la página
+anterior.
+
+En *Informática Básica* se recomienda en este momento instalar la extensión 
+[vscodevim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+de emulación de Vim en VSC.
+Si instala esa extensión (`ext install vscodevim.vim`) en VSC podrá utilizar en VSC todos los comandos que ya
+conoce de `vim`, lo cual le permitirá seguir practicando con este último editor.
+
 
 ### Material de estudio complementario
 Estudie todo lo que se indica en el epígrafe 
