@@ -1,4 +1,4 @@
-# Práctica 09. Ficheros. Visual Studio Code.
+# Práctica 10. Ficheros. Visual Studio Code.
 
 # Factor de ponderación: 9
 
