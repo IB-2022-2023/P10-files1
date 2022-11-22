@@ -144,26 +144,24 @@ de emulación de Vim en VSC.
 Si instala esa extensión (`ext install vscodevim.vim`) en VSC podrá utilizar en VSC todos los comandos que ya
 conoce de `vim`, lo cual le permitirá seguir practicando con este último editor.
 
+El Visual Studio Code está instalado en los ordenadores de las Salas del Centro de Cálculo de la ESIT.
+Con antelación a la sesión de evaluación de esta práctica, el alumnado debiera comprobar en uno de esos
+ordenadores la conexión hacia su máquina virtual de la asignatura, para comprobar que todo funcione
+correctamente antes de la sesión de evaluación.
 
 ### Material de estudio complementario
-Estudie todo lo que se indica en el epígrafe 
-[Functions](https://google.github.io/styleguide/cppguide.html#Functions)
-de la Guía de Estilo de Google y ponga en práctica todo lo que en ella se propone.
-Es normal si encuentra en ese epígrafe algún contenido que aún no ha estudiado: no se preocupe. 
-Centre su atención en aquellos aspectos que ya conozca, para consolidarlos.
-
-Estudie del
+Además de los contenidos revisados en las 
+[Transparencias de clase](https://docs.google.com/presentation/d/1k2IyoAsmd60a6EzP96eLuhgISdf9e35nPRPIBb92a3E/edit?usp=sharing)
+correspondientes al tema de Entrada/Salida así como los 
+[Ejemplos de código](https://github.com/IB-2022-2023/IB-class-code-examples/tree/master/Functions)
+correspondientes a ese material, 
+estudie del
 [tutorial de referencia](https://www.learncpp.com/)
 en la asignatura los siguientes apartados:
-* [7.18 — Introduction to random number generation](https://www.learncpp.com/cpp-tutorial/introduction-to-random-number-generation/)
-* [4.17 — Introduction to std::string](https://www.learncpp.com/cpp-tutorial/introduction-to-stdstring/)
-* [4.18 — Introduction to std::string_view](https://www.learncpp.com/cpp-tutorial/introduction-to-stdstring_view/)
-* [11.16 — An introduction to std::array](https://www.learncpp.com/cpp-tutorial/an-introduction-to-stdarray/)
-* [11.17 — An introduction to std::vector](https://www.learncpp.com/cpp-tutorial/an-introduction-to-stdvector/)
-* [11.13 — For-each loops](https://www.learncpp.com/cpp-tutorial/for-each-loops/)
-* Estudie en 
-[cppreference](https://en.cppreference.com/w/cpp/numeric/random/uniform_real_distribution)
-cómo utilizar una distribución uniforme con números reales (en punto flotante).
+* [23.1 Input and output (I/O) streams](https://www.learncpp.com/cpp-tutorial/input-and-output-io-streams/)
+* [23.2 Input with istream](https://www.learncpp.com/cpp-tutorial/input-with-istream/)
+* [23.3 Output with ostream and ios](https://www.learncpp.com/cpp-tutorial/output-with-ostream-and-ios/)
+* [23.6 Basic file I/O](https://www.learncpp.com/cpp-tutorial/basic-file-io/)
 
 ### Ejercicios
 * Al realizar los ejercicios cree dentro de su repositorio de esta práctica un directorio diferente
@@ -193,3 +191,137 @@ Input           Output
 1 2 3 4 5 6     21.0
 0 0 0 0 1 0 1    2.0
 ```
+
+* 1. Escriba un programa que imprima en pantalla la palabra con mayor número de vocales y la palabra con el
+mayor número de consonantes (independientemente de si se trata de mayúsculas o minúsculas) que se encuentren
+en el fichero de texto que se le pase como parámetro.
+
+2. Desarrolle un programa que copie un fichero de texto en otro añadiendo al principio de cada línea el número de la misma. 
+Ambos ficheros serán idénticos salvo que el de salida contiene al principio de cada línea el número de la misma.
+
+3. Escriba un programa `my_cp` que se comporte como una versión simplificada del comando 
+[cp](https://ss64.com/bash/cp.html)
+de linux copiando un fichero de texto en otro.
+
+4. Escriba un programa `delete_blank_lines` que elimine de un fichero de texto que tomará como entrada las líneas en blanco.
+
+5. Escriba un programa `my_diff` que sea una versión simplificada del comando 
+[diff](https://ss64.com/bash/diff.html) 
+de Linux.
+Si los ficheros de texto que se comparan son ideńticos, el programa escribirá un mensaje en pantalla
+indicándolo.
+Si no fuera ese el caso el programa imprimirá en pantalla las líneas de texto que son diferentes así como su
+número de línea dentro del fichero.
+
+* 6. Escriba un programa `rotate.cc` que *rote* las vocales en minúscula que encuentre en el fichero que se le
+pase como parámetro por línea de comandos, entendiendo por *rotar* el cambio de
+* 'a' por 'e'
+* 'e' por 'i'
+* 'i' por 'o'
+* 'o' por 'u'
+* 'u' por 'a'
+
+De modo que un fichero de entrada que contuviera este texto:
+```
+In an age when acronyms were popular, the Manchester Mark I was
+sometimes referred to as MADM (Manchester Automatic Digital Machine)
+or MUC (Manchester University Computer).
+```
+Produciría como salida este otro:
+```
+In en egi whin ecrunyms wiri pupaler, thi Menchistir Merk I wes
+sumitomis rifirrid tu es MADM (Menchistir Aatumetoc Dogotel Mechoni)
+ur MUC (Menchistir Unovirsoty Cumpatir).
+```
+
+7. Escriba un programa que lea un fichero de texto que se le pase como parámetro y produzca como salida
+ficheros con nombre `A.txt`, `B.txt`, ..., `Z.txt`. 
+Cada uno de esos ficheros ha de contener en líneas separadas todas las palabras del fichero pasado como
+parámetro que comiencen por la correspondiente letra.
+
+8. Un autómata finito determinista ([DFA](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
+por sus siglas en inglés) es una máquina abstracta que acepta o rechaza una determinada secuencia de símbolos.
+Lea el artículo de 
+[Wikipedia](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
+si quiere conocer algunos detalles sobre este modelo de cómputo, aunque ello no es estrictamente necesario
+para realizar este ejercicio.
+Escriba un programa `read_DFA.cc` que lea un fichero de texto `input.dfa` que contiene la especificación de un
+DFA e imprima en pantalla las características del mismo.
+Los ficheros de especificación de DFAs tienen la siguiente estructura:
+* Línea 1: Número total de estados del DFA.
+* Línea 2: Estado de arranque del DFA.
+* A continuación vendrá una línea para cada uno de los estados. 
+  Cada línea contendrá los siguientes números, separados entre sí por espacios en blanco:
+  * Número identificador del estado. 
+  Los estados del autómata se representarán mediante números enteros sin signo. 
+  La numeración de los estados corresponderá a los primeros números naturales comenzando por 0.
+  * Un 1 si se trata de un estado de aceptación y un 0 si se trata de un estado de no aceptación.
+  * Número de transiciones que posee el estado.
+  * A continuación, para cada una de las transiciones, y separados por espacios en blanco, se detallará la información siguiente:
+    * Símbolo de entrada necesario para que se produzca la transición.
+    * Estado destino de la transición.
+
+A modo de ejemplo, el siguiente sería el contenido del fichero de especificación del DFA de 
+[esta figura](https://raw.githubusercontent.com/ULL-ESIT-IB-2021-2022/P10-Files-Doxygen/main/dfa.png)
+
+```
+4
+0
+0 0 2 a 1 b 3
+1 1 2 a 1 b 2
+2 1 2 a 1 b 3
+3 0 2 a 3 b 3
+```
+y para este fichero de entrada el programa debería imprimir en pantalla la siguiente información:
+```
+|Q| = 4
+q0 = 0
+F = {1, 2}
+delta(0, a) = 1
+delta(0, b) = 3
+delta(1, a) = 1
+delta(1, b) = 2
+delta(2, a) = 1
+delta(2, b) = 3
+delta(3, a) = 3
+delta(3, b) = 3
+```
+Es decir en las 3 primeras líneas se imprime el cardinal del conjunto de estados, 
+El estado de arranque (q0) y el conjunto de estados que son de aceptación (F).
+En las líneas sucesivas se imprime el valor de la función de transición (*delta*) para cada estado y símbolo.
+
+9. Lea esta
+[introducción a la criptografía](Criptografia.md)
+y a continuación, desarrolle en C++ un programa `cripto.cc` cuya finalidad será encriptar y/o desencriptar ficheros de texto.
+Si el programa se ejecuta sin pasar parámetros en la línea de comandos, debemos obtener el siguiente mensaje:
+```
+./cripto -- Cifrado de ficheros
+Modo de uso: ./cripto fichero_entrada fichero_salida método password operación
+Pruebe ./cripto --help para más información
+```
+
+Si el programa se ejecuta pasando la opción `--help` se ha de obtener:
+
+```
+./cripto -- Cifrado de ficheros
+Modo de uso: ./cripto fichero_entrada fichero_salida método password operación
+
+fichero_entrada: Fichero a codificar
+fichero_salida:  Fichero codificado
+método:          Indica el método de encriptado
+                   1: Cifrado xor 
+                   2: Cifrado de César
+password:        Palabra secreta en el caso de método 1, Valor de K en el método 2
+operación:       Operación a realizar en el fichero
+                   +: encriptar el fichero
+                   -: desencriptar el fichero
+```
+
+El programa solo se ejecutará cuando se le hayan pasado por línea de comandos los parámetros necesarios.
+En caso de detectar cualquier inconsistencia en los parámetros, el programa debe abortar su ejecución.
+Se indicará asimismo un mensaje de error si el programa no consigue abrir el fichero de entrada.
+
+10. Resuelva el problema 
+[CryptocaesarP75810](https://jutge.org/problems/P75810_en)
+de Jutge y súbalo a la plataforma para su evaluación.
+
