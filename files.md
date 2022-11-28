@@ -168,28 +168,19 @@ en la asignatura los siguientes apartados:
 para cada uno de los ejercicios.
 Asigne a cada uno de esos directorios nombres significativos.
 * Automatice la compilación del programa correspondiente a cada ejercicio con un fichero `Makefile`
-independiente para cada programa e inclúyalo en el correspondiente directorio.
+independiente para cada programa e inclúyalo en el correspondiente directorio. 
+Alternativamente podría también usarse `cmake` con un fichero `CMakeLists`, si se prefiere.
 * Haga que todos los programas tomen su entrada por la línea de comandos y en caso de que se ejecuten sin
   pasarles el número adecuado de parámetros impriman en pantalla un mensaje indicando el modo correcto de
   ejecutar el programa.
 * El código de cada uno de los programas deberá organizarse de forma modular, es decir haciendo uso de funciones
 * Cada función deberá realizar una única tarea y hacerlo correctamente
-* El identificador de una función debe reflejar claramente lo que la función hace
-
-* Exercism ??? XXXX
-
-```
-Public test cases
-Input           Output
-1.0 1.0 1.0      3.0
-1 2 3 4 5 6     21.0
-0 0 0 0 1 0 1    2.0
-```
+* El identificador de una función debe reflejar claramente la finalidad de la función
 
 1. Escriba un programa `vowels-and-consonants.cc` que imprima en pantalla la palabra con mayor número de vocales y la palabra con el
 mayor número de consonantes (independientemente de si se trata de mayúsculas o minúsculas) que se encuentren
 en un fichero de texto que se le pase como parámetro por línea de comandos.
-En caso de empate (haya varias palabras con igula número de vocales/consonantes) el programa imprimirá la
+En caso de empate (haya varias palabras con igual número de vocales/consonantes) el programa imprimirá la
 palabra que aparezca antes en el fichero de texto.
 
 2. Escriba un programa `rotate.cc` que *rote* las vocales en minúscula que encuentre en el fichero que se le
@@ -271,7 +262,7 @@ En las líneas sucesivas se imprime el valor de la función de transición (*del
 5. Lea esta
 [introducción a la criptografía](Criptografia.md)
 y a continuación, desarrolle en C++ un programa `cripto.cc` cuya finalidad será encriptar y/o desencriptar ficheros de texto.
-Si el programa se ejecuta sin pasar parámetros en la línea de comandos, debemos obtener el siguiente mensaje:
+Si el programa se ejecuta sin pasar parámetros en la línea de comandos, se debiera obtener el siguiente mensaje:
 ```
 ./cripto -- Cifrado de ficheros
 Modo de uso: ./cripto fichero_entrada fichero_salida método password operación
