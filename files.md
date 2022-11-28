@@ -192,15 +192,7 @@ en un fichero de texto que se le pase como parámetro por línea de comandos.
 En caso de empate (haya varias palabras con igula número de vocales/consonantes) el programa imprimirá la
 palabra que aparezca antes en el fichero de texto.
 
-2. Escriba un programa `my_diff` que sea una versión simplificada del comando
-[diff](https://ss64.com/bash/diff.html)
-de Linux.
-Si los ficheros de texto que se comparan son ideńticos, el programa escribirá un mensaje en pantalla
-indicándolo.
-Si no fuera ese el caso el programa imprimirá en pantalla las líneas de texto que son diferentes así como su
-número de línea dentro del fichero.
-
-3. Escriba un programa `rotate.cc` que *rote* las vocales en minúscula que encuentre en el fichero que se le
+2. Escriba un programa `rotate.cc` que *rote* las vocales en minúscula que encuentre en el fichero que se le
 pase como parámetro por línea de comandos, entendiendo por *rotar* el cambio de
 * 'a' por 'e'
 * 'e' por 'i'
@@ -221,12 +213,12 @@ sumitomis rifirrid tu es MADM (Menchistir Aatumetoc Dogotel Mechoni)
 ur MUC (Menchistir Unovirsoty Cumpatir).
 ```
 
-4. Escriba un programa que lea un fichero de texto que se le pase como parámetro y produzca como salida
+3. Escriba un programa que lea un fichero de texto que se le pase como parámetro y produzca como salida
 ficheros con nombre `A.txt`, `B.txt`, ..., `Z.txt`.
 Cada uno de esos ficheros ha de contener en líneas separadas todas las palabras del fichero pasado como
 parámetro que comiencen por la correspondiente letra.
 
-5. Un autómata finito determinista ([DFA](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
+4. Un autómata finito determinista ([DFA](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
 por sus siglas en inglés) es una máquina abstracta que acepta o rechaza una determinada secuencia de símbolos.
 Lea el artículo de
 [Wikipedia](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
@@ -276,7 +268,7 @@ Es decir en las 3 primeras líneas se imprime el cardinal del conjunto de estado
 El estado de arranque (q0) y el conjunto de estados que son de aceptación (F).
 En las líneas sucesivas se imprime el valor de la función de transición (*delta*) para cada estado y símbolo.
 
-6. Lea esta
+5. Lea esta
 [introducción a la criptografía](Criptografia.md)
 y a continuación, desarrolle en C++ un programa `cripto.cc` cuya finalidad será encriptar y/o desencriptar ficheros de texto.
 Si el programa se ejecuta sin pasar parámetros en la línea de comandos, debemos obtener el siguiente mensaje:
