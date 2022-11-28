@@ -5,7 +5,7 @@
 ### Objetivos
 Los objetivos de esta práctica son que el alumnado:
 * Sea capaz de resolver problemas sencillos en C++ usando todos los conocimientos adquiridos hasta ahora,
-  y en particular utilizando funciones y objetos de las clases `std::string`, `std::array`, `std::vector`
+  y en particular utilizando funciones y ficheros de texto
 * Diseñe, desarrolle y utilice funciones en sus programas haciendo que sus programas sean modulares
 * Configure y practique el uso de Visual Studio Code (VSC) para editar ficheros de forma remota en su VM
 
@@ -186,9 +186,11 @@ Input           Output
 0 0 0 0 1 0 1    2.0
 ```
 
-1. Escriba un programa que imprima en pantalla la palabra con mayor número de vocales y la palabra con el
+1. Escriba un programa `vowels-and-consonants.cc` que imprima en pantalla la palabra con mayor número de vocales y la palabra con el
 mayor número de consonantes (independientemente de si se trata de mayúsculas o minúsculas) que se encuentren
-en el fichero de texto que se le pase como parámetro.
+en un fichero de texto que se le pase como parámetro por línea de comandos.
+En caso de empate (haya varias palabras con igula número de vocales/consonantes) el programa imprimirá la
+palabra que aparezca antes en el fichero de texto.
 
 2. Escriba un programa `my_diff` que sea una versión simplificada del comando
 [diff](https://ss64.com/bash/diff.html)
