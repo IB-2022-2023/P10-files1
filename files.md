@@ -249,8 +249,7 @@ Los ficheros de especificación de DFAs tienen la siguiente estructura:
     * Estado destino de la transición.
 
 A modo de ejemplo, el siguiente sería el contenido del fichero de especificación del DFA de
-[esta figura](https://raw.githubusercontent.com/ULL-ESIT-IB-2021-2022/P10-Files-Doxygen/main/dfa.png)
-
+[esta figura](https://raw.githubusercontent.com/IB-2022-2023/P10-files/main/dfa.png)
 ```
 4
 0
